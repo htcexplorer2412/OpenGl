@@ -1,4 +1,6 @@
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
+
 
 int main(void)
 {
@@ -13,6 +15,7 @@ int main(void)
     if (!window)
     {
         glfwTerminate();
+        glewInit();
         return -1;
     }
 
